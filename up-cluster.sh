@@ -14,7 +14,7 @@ fi
 terraform apply -auto-approve
 
 # Configuration variables
-CLUSTER_NAME="oxn.dev.com"
+CLUSTER_NAME="oxn.dev.com"          # If you want to change the cluster name, you need to update the  variable in down-cluster.sh
 PROJECT_ID=$1                       # GCP project ID
 ZONE="europe-west1-b"               # Single zone since HA is not needed
 NODE_COUNT=3

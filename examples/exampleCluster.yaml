@@ -11,7 +11,7 @@ spec:
   channel: stable
   cloudConfig: {}
   cloudProvider: gce
-  configBase: gs://kops-state-store-bucket-oxn/oxn.dev.com
+  configBase: gs://<kops-state-store-bucket-name>/oxn.dev.com
   etcdClusters:
   - cpuRequest: 200m
     etcdMembers:
@@ -44,7 +44,7 @@ spec:
     cilium:
       enableNodePort: true
   nonMasqueradeCIDR: 100.64.0.0/10
-  project: modified-alloy-439412-j6
+  project: <gcp-project-id>
   sshAccess:
   - 0.0.0.0/0
   - ::/0
