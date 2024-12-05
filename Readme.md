@@ -2,6 +2,8 @@
 
 This repository contains scripts and configurations to set up a Kubernetes cluster on Google Cloud Platform (GCP) using kOps (Kubernetes Operations).
 
+If you use just, you can configure the environment variables inside the justfile, run `just init` to initialize terraform and then run `just up` to create the cluster.
+If you don't use just, you can run the scripts manually.
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
@@ -9,16 +11,6 @@ Before you begin, ensure you have the following installed:
 - [kOps](https://kops.sigs.k8s.io/getting_started/install/) (v1.31.0+)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 - [Google Cloud SDK](https://cloud.google.com/sdk/docs/install)
-
-## Project Structure
-```
-.
-├── main.tf                 # Terraform configuration for GCS bucket
-├── cluster-config.yaml     # kOps cluster configuration
-├── setup.sh               # Script to enable required GCP APIs
-├── up-cluster.sh         # Script to create the cluster
-└── down-cluster.sh       # Script to tear down the cluster
-```
 
 ## Setup Instructions
 
